@@ -8,6 +8,5 @@ services:
       - "${EXTERNAL_PASV_PORT:-127.0.0.1:1025}:1025"
     environment:
       - FTP_HOSTNAME=${FTP_HOSTNAME}
-      - FTP_PORT=${FTP_PORT}
     volumes:
-      - /home/ftp/upload:/ftp
+      - /home/ftp:/ftp
