@@ -2,6 +2,8 @@ FROM node:6
 
 EXPOSE 20 21 1025
 
+VOLUME /ftp
+
 # Set workdir
 WORKDIR /src
 

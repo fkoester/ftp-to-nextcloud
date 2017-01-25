@@ -1,7 +1,7 @@
 version: '2.1'
 services:
   app:
-    build: .
+    image: maestroalubia/ftp-to-nextcloud
     ports:
       - "${EXTERNAL_DATA_PORT:-127.0.0.1:20}:20"
       - "${EXTERNAL_CONTROL_PORT:-127.0.0.1:21}:21"
@@ -9,3 +9,5 @@ services:
     environment:
       - FTP_HOSTNAME=${FTP_HOSTNAME}
       - FTP_PORT=${FTP_PORT}
+    volumes:
+      - /home/ftp/upload:/ftp

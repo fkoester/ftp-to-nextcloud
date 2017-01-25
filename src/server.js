@@ -35,7 +35,7 @@ if (process.env.KEY_FILE && process.env.CERT_FILE) {
 
 const server = new ftpd.FtpServer(options.host, {
   getInitialCwd: () => '/',
-  getRoot: () => process.cwd(),
+  getRoot: () => '/ftp',
   pasvPortRangeStart: 1025,
   pasvPortRangeEnd: 1025,
   tlsOptions: options.tls,
