@@ -10,3 +10,4 @@ services:
       - FTP_HOSTNAME=${FTP_HOSTNAME}
     volumes:
       - /home/ftp:/ftp
+    restart: 'always'
