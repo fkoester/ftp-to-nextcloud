@@ -37,7 +37,7 @@ const server = new ftpd.FtpServer(options.host, {
   getInitialCwd: () => '/',
   getRoot: () => '/ftp',
   pasvPortRangeStart: 1025,
-  pasvPortRangeEnd: 1025,
+  pasvPortRangeEnd: 1050,
   tlsOptions: options.tls,
   allowUnauthorizedTls: true,
   useWriteFile: false,

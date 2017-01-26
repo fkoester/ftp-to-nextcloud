@@ -3,9 +3,8 @@ services:
   app:
     image: maestroalubia/ftp-to-nextcloud
     ports:
-      - "${EXTERNAL_DATA_PORT:-127.0.0.1:20}:20"
-      - "${EXTERNAL_CONTROL_PORT:-127.0.0.1:21}:21"
-      - "${EXTERNAL_PASV_PORT:-127.0.0.1:1025}:1025"
+      - "${EXTERNAL_PORT:-127.0.0.1:20-21}:20-21"
+      - "${EXTERNAL_PASV_PORT:-127.0.0.1:1025-1050}:1025-1050"
     environment:
       - FTP_HOSTNAME=${FTP_HOSTNAME}
     volumes:
