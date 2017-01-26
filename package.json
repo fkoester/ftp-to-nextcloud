@@ -1,6 +1,6 @@
 {
-  "name": "lootboy-api",
-  "description": "LootBoy Backend API",
+  "name": "ftp-to-nextcloud",
+  "description": "Uploading files to a nextcloud (probably owncloud works too) via FTP",
   "version": "0.1.0",
   "private": true,
   "scripts": {
