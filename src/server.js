@@ -62,11 +62,7 @@ server.on('client:connected', (connection) => {
   });
 
   connection.on('command:pass', (pass, success, failure) => {
-    if (pass) {
-      success(username);
-    } else {
-      failure();
-    }
+    success(username);
   });
 });
 
